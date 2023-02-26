@@ -42,7 +42,7 @@
 
 </head>
 
-<body class="host_version">
+<body class="host_version ">
 
 
     <header class="top-navbar" style="height: 72px;position: fixed;z-index: 40;width: 100%;top: 0;left: 0;">
@@ -220,42 +220,9 @@
         </nav>
     </header>
     <!-- End header -->
-    <style>
-        .hero {
-            background-image: url(images/connect.png);
-            width: 100%;
-            height: 100vh;
-        }
-
-        .hero h1 {
-            position: absolute;
-            top: 150px;
-            font-weight: bold;
-            color: #eea412;
-            font-size: 30px;
-            text-align: center;
-            width: 100%;
-        }
-
-        #t {
-            text-align: center;
-            margin-right: 65px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            box-shadow: 0 0 5px 10px rgb(202, 200, 200);
-            margin-bottom: 40px;
-        }
-
-        @media (max-width:576px) {
-            .toch {
-                margin: 20px !important;
-            }
-        }
-    </style>
     <!-- JNF form -->
 
-    <div class="JNFsec" style="margin-top:3%;">
+    <div class="JNFsec animated animatedFadeInUp fadeInUpanimated animatedFadeInUp fadeInUp" style="margin-top:3%;">
         <div class=" contactJnf">
             <h1 style="font-weight: bold;color: #012970;margin-top: 10%;">Looking to
                 Hire
@@ -271,7 +238,7 @@
             </div>
             <!-- </div>
     </div> -->
-        </div class="tab">
+        </div class="tab ">
         <button class="btn btn-info  btn-sm jnfButton1 tablinks" onclick="openJnf(event, 'jnf')"
             style="font-weight: bold;">FILL
             JNF/JAF<br>DIRECT RECRUITMENT</button>
@@ -403,9 +370,10 @@
 
 
 
-    <h1 style="margin-top:50px;color: #012970;text-align: center;font-weight: bolder;">Contact Us</h1>
-    <div id="contact" class="section wb">
-        <div class="cards" style="text-align: center;">
+    <h1 class="animated animatedFadeInUp fadeInUpanimated animatedFadeInUp fadeInUp"
+        style="margin-top:50px;color: #012970;text-align: center;font-weight: bolder;">Contact Us</h1>
+    <div id="contact" class="section wb ">
+        <div class="cards " style="text-align: center;">
             <div class="col-md-3">
                 <div class="card bg-light card-block info-box shadow-lg p-3 mb-5 bg-white rounded"
                     style=" padding-top: 10%;">
@@ -577,6 +545,48 @@
                     #itsmap {
                         margin-left: 17%;
                         margin-top: 5%;
+                    }
+
+
+                    /* Animation */
+
+                    @keyframes fadeInUp {
+                        from {
+                            transform: translate3d(0, 40px, 0)
+                        }
+
+                        to {
+                            transform: translate3d(0, 0, 0);
+                            opacity: 1
+                        }
+                    }
+
+                    @-webkit-keyframes fadeInUp {
+                        from {
+                            transform: translate3d(0, 40px, 0)
+                        }
+
+                        to {
+                            transform: translate3d(0, 0, 0);
+                            opacity: 1
+                        }
+                    }
+
+                    .animated {
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                        -webkit-animation-duration: 1s;
+                        -webkit-animation-fill-mode: both
+                    }
+
+                    .animatedFadeInUp {
+                        opacity: 0
+                    }
+
+                    .fadeInUp {
+                        opacity: 0;
+                        animation-name: fadeInUp;
+                        -webkit-animation-name: fadeInUp;
                     }
                 }
 
