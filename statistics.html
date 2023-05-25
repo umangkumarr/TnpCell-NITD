@@ -40,7 +40,7 @@
                 <canvas id="myFirstChart" ></canvas>
             </div>
             </div>
-            <div class="Dough-desc col-lg-6 col-sm-12">
+            <div class="Dough-desc col-lg-6 col-sm-12" style="padding-right:2%">
                 <h1 style="padding:0 0 4% 6%; margin-bottom:4%;">Average Package for B.Tech 2022-23</h1>
                 <canvas id="avgPackage2223" ></canvas>
             </div>
@@ -104,7 +104,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
                     borderColor:'rgb(0, 140, 255)',
                     backgroundColor:'rgba(87, 179, 255, 0.53)',
                     borderWidth: 2,
-                    borderRadius: 10,
+                    borderRadius: 8,
                     yAxisID:'y',
                 hoverOffset: 4
                 },
@@ -114,7 +114,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
                     borderColor:'rgb(255, 0, 72)',
                     backgroundColor:'rgba(255, 0, 72, 0.397)',
                     borderWidth: 2,
-                    borderRadius: 10,
+                    borderRadius: 8,
                     yAxisID:'y2',
                 hoverOffset: 4
                 }]
@@ -139,7 +139,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
     <!-- bar chart average package end -->
 
         <!-- bar chart start -->
-    <script>
+        <script>
         const ctd = document.getElementById('yearChart').getContext('2d');
         const avg = new Chart(ctd,{
             type:'bar',
@@ -148,8 +148,8 @@ https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
                 datasets:[{
                     label:'Overall',
                     data:[6.5,8.2,8.8,9.5,17.72],
-                    borderColor:'rgb(0, 255, 0)',
-                    backgroundColor:'rgba(78, 255, 87, 0.53)',
+                    borderColor:'rgb(255,99,132)',
+                    backgroundColor:'rgb(255,99,132)',
                     borderWidth: 2,
                     
                     yAxisID:'y',
@@ -158,8 +158,8 @@ https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
                 {
                     label:'CSE',
                     data:[8.2,9.2,11.2,12.2,18.32],
-                    borderColor:'rgb(0, 140, 255)',
-                    backgroundColor:'rgba(87, 179, 255, 0.53)',
+                    borderColor:'rgb(54,162,235)',
+                    backgroundColor:'rgb(54,162,235)',
                     borderWidth: 2,
                     
                 hoverOffset: 4
@@ -167,8 +167,8 @@ https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
                 {
                     label:'ECE',
                     data:[5.9,7.1,9,8.4,16.25],
-                    borderColor:'rgb(255, 0, 72)',
-                    backgroundColor:'rgba(255, 0, 72, 0.397)',
+                    borderColor:'rgb(255,205,86)',
+                    backgroundColor:'rgb(255,205,86)',
                     borderWidth: 2,
                     
                 hoverOffset: 4
@@ -176,8 +176,8 @@ https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
                 {
                     label:'EEE',
                     data:[4.9,7.2,6.4,8.1,18.11],
-                    borderColor:'rgb(253, 255, 0)',
-                    backgroundColor:'rgba(253, 255, 0, 0.53)',
+                    borderColor:'rgb(75, 192, 192)',
+                    backgroundColor:'rgb(75, 192, 192)',
                     borderWidth: 2,
                     
                 hoverOffset: 4
