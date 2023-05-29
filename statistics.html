@@ -6,638 +6,195 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="statisticstyle.css">
 <!-- Site Metas -->
 <title>T&P Cell, NIT Delhi</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
 
-<!-- Site Icons -->
-<link rel="shortcut icon" href="images/download.png" type="image/x-icon" />
-
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Site CSS -->
-<link rel="stylesheet" href="style.css">
-<!-- ALL VERSION CSS -->
-<link rel="stylesheet" href="css/versions.css">
-<!-- Responsive CSS -->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
-
-<!-- Modernizer for Portfolio -->
-<script src="js/modernizer.js"></script>
-<script src="js/jquery.min.js"></script>
-
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body class="host_version">
-    <!-- LOADER -->
-    <div id="preloader">
-        <div class="loader-container">
-            <div class="progress-br float shadow">
-                <div class="progress__item"></div>
-            </div>
+<body>
+    <div class="intro-banner row">
+        <div class="col-lg-6 col-sm-12 status">
+            <h1 style="padding-bottom: 2%;">Placement Statistics of NIT Delhi over the years</h1>
+            <a role="button" href="#myFirstChart" class="btn btn-primary">Eligible Students for placements for 2022-23</a>
+            <h1 style="padding-top: 1%;"></h1>
+            <a role="button" href="#avgPackage2223" class="btn btn-primary">Average package statistics for 2022-23</a>
+            <h1 style="padding-top: 1%;"></h1>
+            <a role="button" href="#avgPackage2223" class="btn btn-primary">Average Packages throughout the years</a>
+                
         </div>
+        <div class="col-lg-6 col-sm-12">
+            <img class="vimg" src="images/imgbanner.png" alt="vector">
+        </div>
+        
     </div>
-    <!-- END LOADER -->
-
-    <!-- Start header -->
-    <header class="top-navbar" style="height: 72px;position: fixed;z-index: 40;width: 100%;top: 0;left: 0;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background: rgba(153,41,65,1); padding: 0;">
-            <div class="container-fluid">
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-                    #lg div div div span {
-                        font-family: 'Times New Roman', Times, serif;
-                        /* content: "NIT, DELHI"; */
-                        color: white;
-                        margin-left: 10px;
-                        /* display: inline-block; */
-                        cursor: pointer;
-                    }
-                    
-                    #lg {
-                        /* padding-top: 10px; */
-                        height: 72px;
-                        padding-bottom: 0;
-                        display: flex;
-                        align-items: center;
-                    }
-                    
-                    .llll {
-                        margin-top: 20px;
-                    }
-                    
-                    #logoo {
-                        width: 140%;
-                    }
-                    
-                    @media (max-width:991px) {
-                        #lg {
-                            padding-top: 20px;
-                            height: 60px;
-                        }
-                        .llll {
-                            margin-top: 10px;
-                        }
-                        #logoo {
-                            margin-right: 30px;
-                        }
-                    }
-                    
-                    @media (max-width:430px) {
-                        #logoo {
-                            margin-right: 30px;
-                            width: 60%;
-                            padding-left: 5px;
-                        }
-                        .sm1 {
-                            padding: 0;
-                        }
-                        .sm1 img {
-                            margin-right: 0;
-                        }
-                        .sm11 {
-                            margin-left: -28px;
-                            padding: 0;
-                        }
-                        .sm11>span {
-                            padding: 0;
-                        }
-                        .sm11>span {
-                            font-size: 0.9rem;
-                        }
-                        .sm11>span span {
-                            font-size: 0.8rem;
-                        }
-                    }
-                </style>
-                <a class="navbar-brand" href="index.html" style="width: 200px; " id="lg">
-                    <div class="container llll">
-                        <div class="row align-items-center">
-                            <div class="column col-4 sm1"><img src="images/Logo_best.png" id="logoo" alt="" /></div>
-                            <div class="column col-8 sm11" style="line-height: 20px; color: white;"><span>NIT DELHI <br><span style="font-size: 0.9rem; font-family: Arial, Helvetica, sans-serif;">Training and Placement Cell</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation" style="    margin-right: 20px;">
-					<span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-				</button>
-                <div class="collapse navbar-collapse" id="navbars-host" style="height: 72px;">
-                    <style>
-                        #ctm {
-                            display: none;
-                        }
-                        
-                        @media (max-width:991px) {
-                            #ct {
-                                display: none;
-                            }
-                            #ctm {
-                                display: block;
-                            }
-                            .top-navbar nav #navbars-host li {
-                                margin: 0px 20px;
-                                margin-left: 30px;
-                            }
-                            #sl {
-                                margin-bottom: 10px;
-                            }
-                        }
-                    </style>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item "><a class="nav-link" href="index.html">HOME</a></li>
-                        <li class="nav-item dropdown"><a class="nav-link " id="dropdown-a" data-toggle="" href="#">WHY RECRUIT @ NITD</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                                <a class="dropdown-item" href="whyrecruit.html" style="padding-right: 3px;">LIFE @ NITD</a>
-                                <a class="dropdown-item" href="studentachievment.html" style="padding-right: 3px;">STUDENT ACHIEVEMENTS</a>
-                                <a class="dropdown-item" href="academics.html" style="padding-right: 3px;">ACADEMICS</a>
-                                <a class="dropdown-item" href="departments.html" style="padding-right: 3px;">DEPARTMENTS</a>
-                                <a class="dropdown-item" href="https://nitdelhi.irins.org/" style="padding-right: 3px;" target="_blank">RESEARCH</a>
-
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link " href="#" id="dropdown-a" data-toggle="">For Recruiters</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                                <a class="dropdown-item" href="Recruiters.html" style="padding-right: 3px;">PAST RECRUITERS</a>
-                                <a class="dropdown-item" href="statistics.html" style="padding-right: 3px;">PLACEMENT STATISTICS</a>
-                                <a class="dropdown-item" href="process.html" style="padding-right: 3px;">RECRUITMENT PROCEDURE</a>
-                                <a class="dropdown-item" href="companyInterestForm.html" style="padding-right: 3px;">COMPANY INTEREST FORM</a>
-                                <a class="dropdown-item" href="Placement Brochure 2021-22(Final).pdf" style="padding-right: 3px;" target="_blank">PLACEMENT BROCHURE (2021-22)</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown" style="margin-right: -0px;">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">For Students</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                                <a class="dropdown-item" href="https://tnp-nitdelhi.herokuapp.com/" style="padding-right: 3px;">STUDENT LOGIN</a>
-                                <a class="dropdown-item" href="faq.html" style="padding-right: 3px;">FAQ</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="team.html" style="padding-right: -5px;padding-left: 5px;">TEAM</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-                    </ul>
-                </div>
+    <div class="donut-chart row">
+        <div class="eligible col-lg-6 col-sm-12">        
+            <h1 style="padding:4% 0 0 6%;">Eligible Students for placements 2022-23</h1>
+            <div >
+                <!-- Doughnut chart canvas -->
+                <canvas id="myFirstChart" ></canvas>
             </div>
-        </nav>
-    </header>
-    <!-- End header -->
-
-
-
-    <div id="overviews" class="section wb" style="margin-top: 50px;">
-        <div class="container align-center" style="text-align: center;justify-content: center;">
-            <div class="row align-center start" style="margin-top: -2%; margin-right: auto; margin-left: auto;justify-content: center;">
-                <div class="grid-x grid-padding-x" style="width: 100%;">
-                    <div class="large-2 medium-2 hide-for-small-only"></div>
-                    <div class="large-8 medium-8 small-12">
-                        <h3 class="headings" id="stathead" style="color: #eea412;">
-                            Placement Statistics
-                        </h3>
-
-
-                        <h4 style="color: #eea412;">
-                            Batch 2021*
-                        </h4>
-
-                        <!-- <h5 style="text-align: center;color: #eea412; font-weight: bolder;">
-					  PLACEMENT STATISTICS FOR 2020 PASSING BATCH
-					</h5> -->
-                        <div style="justify-content: center;display: flex;">
-                            <table class="paras" style="box-shadow: 0.5px 0.5px 0.5px #A9A9A9;margin-bottom: 30px;    width: 80%;">
-                                <thead>
-                                    <tr style="color:#696969; text-align: left;">
-                                        <td align="center" width="70px" style="text-align: center;">
-                                            Highest Package
-                                        </td>
-                                        <td align="center" width="20px" style="text-align: center;">
-                                            Average Package
-                                        </td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td align="center">46 LPA</td>
-                                        <td align="center">10.054 LPA</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <br>
-                        </div>
-                        <br>
-
-                        <h5 align="center" style="color: #eea412;">
-                            Consolidated Statistics
-                        </h5>
-                        <div align="center">
-                            <table class="paras" style="width: 80%;">
-                                <tbody>
-                                    <tr></tr>
-                                    <tr style="background: #e0dddd;">
-                                        <td>
-                                            Median Package
-                                        </td>
-                                        <td align="center">7.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Total Offers (Full time + Internship)
-                                        </td>
-                                        <td align="center">151</td>
-                                    </tr>
-
-                                    <tr style="background: #e0dddd;">
-                                        <td>
-                                            Percentage of registered students placed
-                                        </td>
-                                        <td align="center">88.8</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <br>
-                        </div>
-                        <br>
-                        <hr>
-
-                        <h4 style="color: #eea412;">
-                            Batch 2020*
-                        </h4>
-
-                        <!-- <h5 style="text-align: center;color: #eea412; font-weight: bolder;">
-						PLACEMENT STATISTICS FOR 2020 PASSING BATCH
-					  </h5> -->
-                        <div style="justify-content: center;display: flex;">
-                            <table class="paras" style="box-shadow: 0.5px 0.5px 0.5px #A9A9A9;margin-bottom: 30px;    width: 80%;">
-                                <thead>
-                                    <tr style="color:#696969; text-align: left;">
-                                        <td align="center" width="70px" style="text-align: center;">
-                                            Highest Package
-                                        </td>
-                                        <td align="center" width="20px" style="text-align: center;">
-                                            Average Package
-                                        </td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td align="center">19.22 LPA</td>
-                                        <td align="center">9.36 LPA</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <br>
-                        </div>
-                        <br>
-
-                        <h5 align="center" style="color: #eea412;">
-                            Consolidated Statistics
-                        </h5>
-                        <div align="center">
-                            <table class="paras" style="width: 80%;">
-                                <tbody>
-                                    <tr></tr>
-                                    <tr style="background: #e0dddd;">
-                                        <td>
-                                            Median Package
-                                        </td>
-                                        <td align="center">6.6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Total Offers (Full time + Internship)
-                                        </td>
-                                        <td align="center">82</td>
-                                    </tr>
-
-                                    <tr style="background: #e0dddd;">
-                                        <td>
-                                            Percentage of registered students placed
-                                        </td>
-                                        <td align="center">92.31</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <br>
-
-
-
-
-
-
-
-
-
-                            <hr>
-                            <h2 style="margin-top: 50px;color: #eea412;">Pictorial Representation of placement statistics</h2>
-                            <div class="container" style="display: flex;flex-wrap: wrap;justify-content: center;">
-                                <!-- <div id="piechart"></div>
-
-						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-						
-						<script type="text/javascript">
-						// Load google charts
-						google.charts.load('current', {'packages':['corechart']});
-						google.charts.setOnLoadCallback(drawChart);
-						
-						// Draw the chart and set the chart values
-						function drawChart() {
-						  var data = google.visualization.arrayToDataTable([
-						  ['Task', 'number'],
-						  ['CSE(62)', 56],
-						  ['ECE(60)', 56],
-						  ['EEE(58)', 47]
-						]);
-						
-						  // Optional; add a title and set the width and height of the chart
-						  var options = {'title':'Number of Students Eligible for placement drive 2021-22', 'width':550, 'height':400};
-						
-						  // Display the chart inside the <div> element with id="piechart"
-						  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-						  chart.draw(data, options);
-						}
-						</script> -->
-                                <div id="barchart_material" style="width: 310px; height: 300px;margin-top: 4%;margin-bottom: 30px;">
-                                </div>
-                                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                                <script type="text/javascript">
-                                    google.charts.load('current', {
-                                        'packages': ['bar']
-                                    });
-                                    google.charts.setOnLoadCallback(drawChart);
-
-                                    function drawChart() {
-                                        var data = google.visualization.arrayToDataTable([
-                                            ['Year', 'CSE', 'ECE', 'EEE', 'Overall'],
-                                            ['2017-18', 8.2, 5.9, 4.9, 6.5],
-                                            ['2018-19', 9.2, 7.1, 7.2, 8.2],
-                                            ['2019-20', 11.2, 9.0, 6.4, 8.8],
-                                            ['2020-21', 12.2, 8.4, 8.1, 9.5]
-                                        ]);
-
-                                        var options = {
-                                            chart: {
-                                                title: 'Average package over the years (LPA)',
-                                            },
-                                            bars: 'vertical' // Required for Material Bar Charts.
-                                        };
-
-                                        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
-
-                                        chart.draw(data, google.charts.Bar.convertOptions(options));
-                                    }
-                                    setTimeout(() => {
-                                        $("#barchart_material tspan").html("Average package over the years(LPA)");
-                                        $("#barchart_material tspan").css("font-size", "0.9rem")
-                                    }, 3000);
-                                </script>
-
-
-
-                                <script type="text/javascript">
-                                    window.onload = function() {
-                                        var chart = new CanvasJS.Chart("chartContainer", {
-                                            title: {
-                                                text: ""
-                                            },
-                                            legend: {
-                                                maxWidth: 300,
-                                                itemWidth: 100
-                                            },
-                                            data: [{
-                                                type: "pie",
-                                                showInLegend: true,
-                                                legendText: "{indexLabel}",
-                                                dataPoints: [{
-                                                    y: 56,
-                                                    indexLabel: "CSE (60)"
-                                                }, {
-                                                    y: 56,
-                                                    indexLabel: "ECE (60)"
-                                                }, {
-                                                    y: 47,
-                                                    indexLabel: "EEE (58)"
-                                                }]
-                                            }]
-                                        });
-                                        chart.render();
-                                    }
-                                </script>
-                                <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-                                <div style="margin-top: 45px;margin-left: 20px;margin-bottom: 20px;">
-                                    <h4 style="color: #696969;">Number of students eligible for placement drive 2021-22</h4>
-                                    <style>
-                                        #chartContainer {
-                                            width: 50%;
-                                        }
-                                        
-                                        @media (max-width: 990px) {
-                                            #chartContainer {
-                                                width: 100%;
-                                            }
-                                        }
-                                    </style>
-                                    <div id="chartContainer" style="height: 300px;">
-                                    </div>
-                                </div>
-
-
-                                <figure>
-                                    <style>
-                                        #hh {
-                                            width: 50%;
-                                            margin-top: 30px;
-                                        }
-                                        
-                                        @media (max-width:700px) {
-                                            #hh {
-                                                width: 80%;
-                                            }
-                                        }
-                                    </style>
-                                    <img src="images/plac.jpg" alt="" id="hh" height="auto">
-                                    <figcaption>
-                                        <h3>Percent Placement over the Years</h3>
-                                    </figcaption>
-                                </figure>
-
-                                <script>
-                                    $(document).ready(function() {
-                                        let wd = window.innerWidth;
-                                        if (wd < 430) {
-                                            setTimeout(() => {
-                                                $("#piechart>div>div>div").css({
-                                                    "left": "-115px"
-                                                });
-                                                $("#piechart>div>div").css({
-                                                    "width": "300px"
-                                                });
-                                                $("#piechart>div>div>div>svg").css({
-                                                    "overflow": "visible"
-                                                });
-                                            }, 2500);
-                                        }
-
-
-                                        $(window).resize(function() {
-                                            let wdr = window.innerWidth;
-                                            if (wdr < 430) {
-                                                setTimeout(() => {
-                                                    $("#piechart>div>div>div").css({
-                                                        "left": "-115px"
-                                                    });
-                                                    $("#piechart>div>div").css({
-                                                        "width": "300px"
-                                                    });
-                                                    $("#piechart>div>div>div>svg").css({
-                                                        "overflow": "visible"
-                                                    });
-                                                }, 2500);
-                                            }
-                                        });
-
-                                    });
-                                </script>
-                            </div>
-                        </div>
-
-                        <div class="row align-center" style=" justify-content: center;">
-                            <div class="large-5 small-12">
-                                <div align="center" style="margin-bottom:60px;margin: 30px auto;">
-                                    <input type="button" class="myButton" value="Complete Placement Report" onclick="window.open('Placement Brochure 2021-22(Final).pdf')" style="background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);background-color: #33bdef;color: white;font-weight: bold; font-size: 1.1rem;  border-radius: 20px;border: 1px solid #057fd0;display: inline-block;cursor: pointer;color: #ffffff;font-family: arial;font-size: 15px;font-weight: bold;padding: 2px 29px;text-decoration: none;text-shadow: 0px -1px 0px #5b6178;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+            <div class="Dough-desc col-lg-6 col-sm-12" style="padding-right:2%">
+                <h1 style="padding:0 0 4% 6%; margin-bottom:4%;">Average Package for B.Tech 2022-23</h1>
+                <canvas id="avgPackage2223" ></canvas>
+            </div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>QUICK LINKS</h3>
-                        </div>
-                        <div style="color:#cccc">
-                            <a href="https://nitdelhi.ac.in/" style="color:#cccc">NIT DELHI HOME PAGE</a>
-                        </div>
-                        <!-- <p>  As a fully  -->
-                        <!-- funded governmental body, NIT Delhi was established as an institute of ‘National Importance’ during the 11th Five Year Plan under the Ministry of Human Resource Development. For the initial two years, academic activities were conducted at NIT Warangal, the mentor Institute for NIT Delhi. </p>    -->
-
-                        <div class="footer-right">
-                            <ul class="footer-links-soi">
-                                <li><a href="https://www.facebook.com/nitdelhiofficialpage/"><i class="fa fa-facebook"></i></a></li>
-                                <!-- linkedin	 -->
-                                <li><a href="https://in.linkedin.com/in/nit-delhi-placement-cell-4a70a9122"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="https://twitter.com/NITDofficial?s=20"><i class="fa fa-twitter"></i></a></li>
-                                <!-- insta	 -->
-                                <li><a href="https://www.instagram.com/nitdelhiofficial/"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                            <!-- end links -->
-                        </div>
-                    </div>
-                    <!-- end clearfix -->
-                </div>
-                <!-- end col -->
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Information Link</h3>
-                        </div>
-                        <ul class="footer-links">
-                            <li id="hm"><a href="index.html">HOME</a></li>
-                            <li id="ab"><a href="whyrecruit.html">WHY RECRUITE @ NITD</a></li>
-                            <li id="st"><a href="recruiters.html">FOR RECRUITERS</a></li>
-                            <li id="blg"><a href="team.html">TEAM</a></li>
-                            <li id="ct"><a href="contact.html">CONTACT</a></li>
-                        </ul>
-                        <!-- end links -->
-                    </div>
-                    <!-- end clearfix -->
-                </div>
-                <!-- end col -->
-
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Contact Details</h3>
-                        </div>
-
-                        <ul class="footer-links">
-                            <li><a href="mailto:tnp@nitdelhi.ac.in">tnp@nitdelhi.ac.in</a></li>
-                            <li><a href="https://tnp.nitdelhi.ac.in" target="_blank">tnp.nitdelhi.ac.in</a></li>
-                            <li><strong>Address:</strong>
-                                <a href="https://goo.gl/maps/LBrEts1UCFJGXd8K6"><br>Sector A-7, Institutional Area,<br> Near Satyawadi Raja Harish<br> Chandra Hospital<br>Narela, New Delhi, 110040</a>
-                            </li>
-                        </ul>
-                        <!-- end links -->
-                    </div>
-                    <!-- end clearfix -->
-                </div>
-                <!-- end col -->
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>Head T&P Cell</h3>
-
-                        </div>
-
-                        <ul class="footer-links">
-                            <li>
-                                <h4 style="color: white;font-weight: 500;margin-bottom: -3.5px;">Dr. Kapil Sharma</h4>
-                            </li>
-                            <li><a href="mailto:headtnp@nitdelhi.ac.in">headtnp@nitdelhi.ac.in </a></li>
-                            <li><a>Phone: 011-33861065, 183</a></li>
-                        </ul>
-                        <!-- end links -->
-                    </div>
-                    <!-- end clearfix -->
-                </div>
-                <!-- end col -->
-
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </footer>
-    <!-- end footer -->
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-center">
-                    <p class="footer-company-name" style="text-align: center;">Copyright &copy; 2021 <a href="index.html">Training & Placement Cell</a></p>
-                    <p class="footer-company-name" style="text-align: center;">Developed By <a>Vishal Singh & Shrey Kumar Prajapati</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- end container -->
+    <div class="yearwise">
+        <h1 style="padding:4% 0 0 6%;">Average Packages throughout the years</h1>
+        <div class="yChart">
+        <canvas style="padding-left: 2%;" id="yearChart" ></canvas>
     </div>
-    <!-- end copyrights -->
+    </div>
+    <!-- Doughnut Chart Begin -->
+    <script src="
+https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
+"></script>
+<script>
+    const ctx= document.getElementById('myFirstChart').getContext('2d');
+    const myChart = new Chart(ctx,{
+        type:'doughnut',
+        data: {
+            labels:["CSE","ECE","EEE"],
+            datasets:[{
+                lable:"placement",
+                data:[60,46,49],
+                backgroundColor: [
+                    'rgb(255,99,132)',
+                    'rgb(54,162,235)',
+                    'rgb(255,205,86)'
+                ],
+                hoverOffset: 4
+            }],
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            // scales:{
+            //     y: {
+            //         beginAtZero: true
+            //     }
+            // }
+        }
+    });
+</script>
+    <!-- Doughnut Chart end -->
+    
+    
+    <script src="
+https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js
+"></script>
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
+    <!-- bar chart start -->
+    <script>
+        const ctx21 = document.getElementById('avgPackage2223').getContext('2d');
+        const avg21 = new Chart(ctx21,{
+            type:'bar',
+            data: {
+                labels:["Overall","CSE","ECE","EEE"],
+                datasets:[{
+                    label:'Average Package',
+                    data:[17.72,18.32,16.25,18.11],
+                    borderColor:'rgb(0, 140, 255)',
+                    backgroundColor:'rgba(87, 179, 255, 0.53)',
+                    borderWidth: 2,
+                    borderRadius: 8,
+                    yAxisID:'y',
+                hoverOffset: 4
+                },
+                {
+                    label:'Placement Percentage',
+                    data:[85.81,98.33,76.09,79.59],
+                    borderColor:'rgb(255, 0, 72)',
+                    backgroundColor:'rgba(255, 0, 72, 0.397)',
+                    borderWidth: 2,
+                    borderRadius: 8,
+                    yAxisID:'y2',
+                hoverOffset: 4
+                }]
+            },
+            options: {
+                scales:{
+                y: {
+                    position:'left',
+                    beginAtZero: true
+                },
+                y2: {
+                    position:'right',
+                    beginAtZero: true,
+                    grid:{
+                    drawOnChartArea: false
+                    }
+                }
+            }
+            }
+        })
+    </script>
+    <!-- bar chart average package end -->
 
+        <!-- bar chart start -->
+        <script>
+        const ctd = document.getElementById('yearChart').getContext('2d');
+        const avg = new Chart(ctd,{
+            type:'bar',
+            data: {
+                labels:["2017-18","2018-19","2019-20","2020-21","2022-23"],
+                datasets:[{
+                    label:'Overall',
+                    data:[6.5,8.2,8.8,9.5,17.72],
+                    borderColor:'rgb(255,99,132)',
+                    backgroundColor:'rgb(255,99,132)',
+                    borderWidth: 2,
+                    
+                    yAxisID:'y',
+                hoverOffset: 4
+                },
+                {
+                    label:'CSE',
+                    data:[8.2,9.2,11.2,12.2,18.32],
+                    borderColor:'rgb(54,162,235)',
+                    backgroundColor:'rgb(54,162,235)',
+                    borderWidth: 2,
+                    
+                hoverOffset: 4
+                },
+                {
+                    label:'ECE',
+                    data:[5.9,7.1,9,8.4,16.25],
+                    borderColor:'rgb(255,205,86)',
+                    backgroundColor:'rgb(255,205,86)',
+                    borderWidth: 2,
+                    
+                hoverOffset: 4
+                },
+                {
+                    label:'EEE',
+                    data:[4.9,7.2,6.4,8.1,18.11],
+                    borderColor:'rgb(75, 192, 192)',
+                    backgroundColor:'rgb(75, 192, 192)',
+                    borderWidth: 2,
+                    
+                hoverOffset: 4
+                }
+            ]
+            },
+            options: {
+                scales:{
+                y: {
+                    position:'left',
+                    beginAtZero: true
+                },
+                
+            }
+            }
+        })
+        </script>
 </body>
 
 </html>
