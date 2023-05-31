@@ -1,0 +1,56 @@
+.intro-banner
+{
+    background-color: #E9F8F9;   
+}
+.vimg
+{
+    width: 100%;
+    padding: 0 0 0 7%;
+    float: left;   
+}
+.status
+{
+    padding: 10% 0 1% 3%;
+}
+.eligible
+{
+    display: inline-block;
+    /* background-color:#EAFDFC; */
+    /* width:30%; */
+    padding: 0.5% 0 5% 0;
+    transition: box-shadow .3s;
+    
+}
+.eligible:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+.avg
+{
+    
+    margin-top:0;
+    padding: 3.2% 2% 0.75% 2%;
+}
+.Dough-desc
+{
+    display: inline-block;
+    padding: 2.5% 0.5% 0 0.5%;
+    /* border-radius: 2%; */
+    transition: box-shadow .3s;
+}
+.Dough-desc:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.466);
+    
+  }
+.dds {
+    padding-top: 10%;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+.yChart
+{
+    width: 80%;
+    height: 70%;
+}
