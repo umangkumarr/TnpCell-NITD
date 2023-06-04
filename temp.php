@@ -691,7 +691,7 @@ Ending of the style created for the modified page  -->
               <div class="text-center">
                 <div style="display:inline-block;">
                   <div class="card" style="width: 18rem;">
-                    <a href="https://paytm.com/" target="_blank"><img src="Past-Recruiters-page-photos\paytm-logo.png" class="card-img-top zoom image-radius" alt="paytm-logo"></a>
+                    <a href="https://paytm.com/" target="_blank"><img src="    Past-Recruiters-page-photos\paytm-logo.png" class="card-img-top zoom image-radius" alt="paytm-logo"></a>
                     <div class="card-body">
                       <h5 class="card-title">Paytm</h5>
                       <p class="card-text">Hired 5 Students from CSE, ECE & EEE Branch</p>
